@@ -7,6 +7,7 @@ import Draggable from "./Drag/Draggable";
 import Feature from "./Feature/Feature";
 import Buy from "./Buy/Buy";
 import Footer from "./Footer/Footer";
+import Product from "./Product/Product";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Feature />
       {/* <Draggable />  */}
       <Buy />
+      <Product />
       {/* <Draggable /> */}
       <Roadmap />
       <Utility />

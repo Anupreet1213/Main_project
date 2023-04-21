@@ -138,7 +138,11 @@ body {
 .heroSectionSubDiv {
   /* background-color: #6134BE; */
   /* background-color: #000000; */
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(97, 52, 190) 0%, rgba(4,0,4,1) 90% );
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgb(97, 52, 190) 0%,
+    rgba(4, 0, 4, 1) 90%
+  );
   border: 1.5px solid aqua;
   padding: 5%;
   display: flex;
@@ -169,7 +173,6 @@ body {
   margin-top: 2%;
   /* border: 1px solid red; */
 }
-
 
 .word-rotator {
   width: 600px;
@@ -233,9 +236,6 @@ body {
   animation: spin_words 6s infinite;
 } */
 
-
-
-
 .heroSectionButtons {
   display: flex;
   gap: 1.5%;
@@ -249,9 +249,8 @@ body {
   cursor: pointer;
   transition: all 0.2s ease-in;
 }
-.heroSectionButtons :first-child:hover{
+.heroSectionButtons :first-child:hover {
   opacity: 0.8;
-
 }
 
 .heroSectionButtons :last-child {
@@ -263,9 +262,9 @@ body {
   border-radius: 10px;
   transition: all 0.2s ease-in;
 }
-.heroSectionButtons :last-child:hover{
+.heroSectionButtons :last-child:hover {
   background-color: aqua;
-  color:black;
+  color: black;
   border-color: aqua;
 }
 
@@ -273,7 +272,7 @@ body {
   /* background-color: #5E5DF0; */
   /* From https://css.glass */
   /* background: rgba(78, 255, 222, 0.5); */
- 
+
   background: linear-gradient(
     270deg,
     rgb(51, 212, 250) 0%,
@@ -297,7 +296,7 @@ body {
   padding: 2% 4%;
   padding-bottom: 2%;
   font-size: 1.3rem;
-  
+
   color: black;
 }
 .heroSectionRightCenter {
@@ -616,7 +615,7 @@ body {
 }
 .utilitySectionLeftDivs:hover {
   background-color: aqua;
-  color:black;
+  color: black;
 }
 .utilitySectionRight {
   /* flex: 0.4; */
@@ -650,7 +649,7 @@ body {
 .serviceSectionSubWrapper:hover {
   background-color: aqua;
   transform: scale(102%);
-  color:black;
+  color: black;
   opacity: 0.7;
 }
 .serviceSectionSubHeadings {
@@ -673,7 +672,7 @@ body {
   /* background-color: #74EBD5;
   background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%); */
   /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(97, 52, 190) 0%, rgba(4,0,4,1) 90% ); */
- 
+
   border-radius: 20px;
   border: solid 2px aqua;
   padding: 4rem 1rem 1rem;
@@ -826,7 +825,7 @@ body {
 
 .dragChild div:hover {
   background-color: aqua;
-  color:black;
+  color: black;
   cursor: pointer;
 }
 
@@ -943,6 +942,252 @@ body {
   }
 }
 
+/* ----------------------------------------------Product------------------------------- */
+
+.product {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  justify-items: center;
+  align-items: center;
+  color: white;
+  /* background-color: aqua; */
+}
+
+@media (min-width: 768px) {
+  .product {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1536px) {
+  .product {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.productBox {
+  position: relative;
+  z-index: 10;
+  grid-column: span 4 / span 4;
+  margin-bottom: 4px;
+  display: block;
+  width: 100%;
+  justify-content: center;
+  column-gap: 0;
+}
+
+@media (min-width: 640px) {
+  .productBox {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* No margin bottom for medium screens and above */
+@media (min-width: 768px) {
+  .productBox {
+    margin-bottom: 0;
+    display: flex;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* No horizontal margin for large screens and above */
+@media (min-width: 1024px) {
+  .productBox {
+    margin-left: 0;
+    margin-right: 0;
+    white-space: normal;
+  }
+}
+
+/* Grid column span of 1 for extra-large screens and above */
+@media (min-width: 1280px) {
+  .productBox {
+    grid-column: span 1 / span 1;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    row-gap: 0.25rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.pBox1 {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transition-property: color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  /* background-color: red; */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pBox2 {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transition-property: color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  /* background-color: red; */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.active {
+  opacity: 0.4;
+}
+
+@media (min-width: 768px) {
+  .pBox1 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+  .pBox2 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+  /* .pMainBox > div > img {
+    display: none;
+  } */
+}
+
+@media (min-width: 1024px) {
+  .pBox1 {
+    padding: 1.5rem;
+  }
+  .pBox2 {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pBox1 {
+    width: auto;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .pBox2 {
+    width: auto;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.pMainBox {
+  position: relative;
+  grid-column: span 4 / span 4;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); */
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+  /* box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 1280px) {
+  .pMainBox {
+    grid-column: span 3 / span 3;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.pMainBox div {
+  overflow: hidden;
+}
+
+.pMainBox-child {
+  display: flex;
+  padding-bottom: 2rem;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .pMainBox-child {
+    padding-bottom: 4rem;
+  }
+}
+
+.pMainBox div {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.productParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 4%;
+  /* gap: 20px; */
+}
+.productParent h1 {
+  margin-bottom: 5%;
+  font-size: 40px;
+  color: aqua;
+}
+
 /* -------------------------------------------Feature------------------------------------------------ */
 
 .feature {
@@ -963,7 +1208,6 @@ body {
 
 .marquee {
   height: 20vh;
-
 }
 
 .marquee img {
