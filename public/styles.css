@@ -136,8 +136,7 @@ body {
 }
 
 .heroSectionSubDiv {
-  /* background-color: #6134BE; */
-  /* background-color: #000000; */
+
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgb(97, 52, 190) 0%,
@@ -145,8 +144,11 @@ body {
   );
   border: 1.5px solid aqua;
   padding: 5%;
+  padding-bottom: 4%;
+  padding-top: 4%;
+  padding-left: 4%;
   display: flex;
-  gap: 5%;
+  gap: 8%;
   border-radius: 20px;
 }
 .heroSectionLeft {
@@ -269,16 +271,16 @@ body {
 }
 
 .heroSectionRight {
-  background-color: aqua;
-  border-radius: 16px;
+  background-color: #2563EB;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(78, 255, 222, 0.41);
-
   border-radius: 20px;
-  flex: 0.5;
+  /* flex: 0.4; */
+  /* height: 65vh; */
   display: flex;
+  width: 32%;
   flex-direction: column;
 }
 
@@ -289,25 +291,25 @@ body {
 
 .heroSectionRightTop {
   display: flex;
-  /* background-color: blue; */
+ 
   justify-content: center;
   flex-direction: column;
   padding: 2% 8%;
   padding-bottom: 2%;
   font-size: 1.3rem;
 
-  color: black;
+  color: white;
 }
 .heroSectionRightTop:first-child {
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .heroSectionRightCenter {
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2%;
+  justify-content: center;
   border-radius: 0 0 20px 20px;
   font-weight: 600;
 }
@@ -315,138 +317,141 @@ body {
 .heroSectionRightCenterText1 {
   font-size: 1rem;
   padding: 1%;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .heroSectionRightCenterText2 {
   font-size: 1.2rem;
   padding-bottom: 2%;
 }
 .heroSectionRightCenterText3 {
-  font-size: 1.2rem;
-}
-.heroSectionRightCenterText4 {
-  font-size: 1.1rem;
-  padding-bottom: 2%;
-}
-.heroSectionRightCenterText5 {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  padding-top: 2%;
+  font-weight: 700;
   padding-bottom: 2%;
 }
 
+
 .heroSectionRightPurpleButtons {
   display: flex;
+  padding-top: 5%;
   flex-direction: column;
-  width: 70%;
+  width: 90%;
+
 }
 .heroSectionRightPurpleButtons div {
-  background-color: #09091c;
+  background-color: #2563EB;
   text-align: center;
-  color: white;
+  color:white;
+  /* color: azure; */
   margin-bottom: 2%;
-  padding: 3%;
-  border-radius: 20px;
+  padding: 4%;
+  border-radius: 5px;
 }
 .heroSectionRightPurpleButtons div:hover {
   text-decoration: underline;
 }
 
-.heroSectionRightWhiteButtons {
+/* .heroSectionRightWhiteButtons {
   display: flex;
-  /* gap: 10%; */
-  padding-top: 2%;
-  justify-content: space-between;
+  justify-content: center;
   width: 70%;
-}
-.heroSectionRightWhiteButtons div {
+} */
+/* .heroSectionRightWhiteButtons div {
   font-size: 0.7rem;
   background-color: white;
   border-radius: 20px;
   padding: 3% 7%;
-}
+} */
 
-.horizontalRule {
-  border-color: black;
-  /* border-width: 1px; */
-  border-width: 1.5px;
-  border-style: solid;
-}
 
-.heroStagesSection {
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  text-align: center;
-  gap: 5%;
-  font-size: 0.7rem;
-}
-.heroSectionStagesCircular {
-  /* text-align: center; */
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  margin: 0 auto;
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.heroSectionStagesCircularInside1 {
-  height: 12px;
-  width: 12px;
-  /* background-color: rgb(156, 109, 255); */
-  background-color: yellow;
-  border-radius: 50%;
-
-  /* margin-top: auto; */
-}
-
-.heroStagesSectionHorizontalLine1 {
-  position: relative;
-  top: 25%;
-  left: 12.5%;
-  height: 10px;
-  width: 150px;
-  background-color: black;
-}
 
 .progressSection {
-  /* text-align: center; */
-  /* align-items: center; */
-  /* width: 90%; */
-  background-color: rgb(65, 160, 160);
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: #93C5FD;
   border-radius: 80px;
 }
 .progressLabel {
+  /* position: absolute;
+  left:80%; */
   border-radius: 80px;
+  /* margin-top: 4%; */
   background-color: rgb(255, 255, 255);
-  font-size: 1rem;
-  color: blue;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #2563EB;
+}
+#container {
+  display: flex;
+  align-items: center;
+  width: 25vw;
 }
 
-/* .heroStagesSectionHorizontalLine2{
-  position: relative;
-  top: 10%;
-  left: 67.5%;
-  height: 10px;
-  width: 100px;
-  background-color: black;
+.line {
+  flex: 1;
+  height: 0.5px;
+  background-color: #2563EB;
 }
-.heroStagesSectionHorizontalLine3{
-  position: relative;
-  top: 10%;
-  left: 57.5%;
-  height: 10px;
-  width: 100px;
-  background-color: black;
+
+.content {
+  padding: 10px 10px;
+  font-size: 1rem;
+  color:#2563EB;
+  font-weight: bold;
 }
- */
+
+.heroSectionTextFields{
+  width: 90%;
+}
+
+
+.ThreeButtonsWrapper{
+display: flex;
+width: 100%;
+justify-content: space-evenly;
+padding-bottom: 2%;
+/* gap:15%; */
+}
+
+.buttonsKeDiv{
+  font-size: 1rem;
+  color: #24262b;
+  padding: 2% 5%;
+  border-radius: 5px;
+  border: 1px solid rgb(65, 65, 67);
+}
+.buttonsKeDiv2{
+  font-size: 1rem;
+  color: #24262b;
+  padding: 2% 5%;
+  border-radius: 5px;
+  border: 1px solid rgb(65, 65, 67);
+}
+.buttonsKeDiv3{
+  font-size: 1rem;
+  color: #24262b;
+  padding: 2% 5%;
+  border-radius: 5px;
+  border: 1px solid rgb(65, 65, 67);
+}
+.activeButton{
+  border: 1.8px solid rgb(0, 21, 255);
+  font-size: 1rem;
+  color: #0545e8;
+  padding: 2% 5%;
+  border-radius: 5px;
+  /* border: 1px solid rgb(65, 65, 67); */
+}
+
+
+
+
+
+
+
 
 /* <----------------------------------------Roadmap----------------------------------------> */
-/* 
-.roadmapSection{
-    background-color: black;
-} */
+
 
 .projectsHeading {
   font-size: 2.5rem;
