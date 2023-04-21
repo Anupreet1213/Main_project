@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="heroSectionSubDiv">
         <div className="heroSectionLeft">
           <p className="heroSectionLeftHeading">
-            <span style={{ color: "#51CAB4" }}> BlockGPT </span> is an advanced
+            <span style={{ color: "yellow" }}> BlockGPT </span> is an advanced
             AI model specifically designed for the blockchain and cryptocurrency
             industries.
             {/* <span > 100x faster</span> (Literally) */}

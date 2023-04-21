@@ -5,8 +5,22 @@
 }
 
 body {
-  background-color: black;
+  background-color: #060919;
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 0%);
+}
+::-webkit-scrollbar-thumb {
+  background: aqua;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(20, 210, 210);
 }
 
 /* --------------------------------------NavBar---------------------------------------- */
@@ -24,7 +38,7 @@ body {
   /* position: fixed; */
   width: 100vw;
   z-index: 2;
-  border-bottom: 1px solid aqua;
+  /* border-bottom: 1px solid aqua; */
 }
 
 .navbar.scrolled {
@@ -123,7 +137,9 @@ body {
 
 .heroSectionSubDiv {
   /* background-color: #6134BE; */
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(97, 52, 190) 0%, rgba(4,0,4,1) 90% );
+  border: 1.5px solid aqua;
   padding: 5%;
   display: flex;
   gap: 5%;
@@ -146,7 +162,7 @@ body {
 }
 .heroSectionLeftDescription2 {
   font-size: 1.2rem;
-  color: aqua;
+  color: yellow;
   /* padding-top: 3%; */
   height: 11%;
   overflow: hidden;
@@ -230,24 +246,34 @@ body {
   padding: 3%;
   color: white;
   border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
 }
+.heroSectionButtons :first-child:hover{
+  opacity: 0.8;
+
+}
+
 .heroSectionButtons :last-child {
-  /* background-color: #6134be; */
-  background: linear-gradient(
-    270deg,
-    rgb(51, 212, 250) 0%,
-    rgb(23, 243, 221) 100%
-  );
+  cursor: pointer;
+  background-color: transparent;
   border: 1.5px solid white;
-  color: black;
+  color: white;
   padding: 3%;
   border-radius: 10px;
+  transition: all 0.2s ease-in;
+}
+.heroSectionButtons :last-child:hover{
+  background-color: aqua;
+  color:black;
+  border-color: aqua;
 }
 
 .heroSectionRight {
   /* background-color: #5E5DF0; */
   /* From https://css.glass */
   /* background: rgba(78, 255, 222, 0.5); */
+ 
   background: linear-gradient(
     270deg,
     rgb(51, 212, 250) 0%,
@@ -271,18 +297,10 @@ body {
   padding: 2% 4%;
   padding-bottom: 2%;
   font-size: 1.3rem;
+  
   color: black;
 }
 .heroSectionRightCenter {
-  /* background: linear-gradient(135deg,#cb5eee,#4be1ec); */
-  /* From https://css.glass
-  background: rgba(78, 255, 222, 0.5);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(78, 255, 222, 0.41); */
-
   background: linear-gradient(
     270deg,
     rgb(51, 212, 250) 0%,
@@ -293,7 +311,6 @@ body {
   align-items: center;
   padding-bottom: 2%;
   border-radius: 0 0 20px 20px;
-  /* color:purple; */
   font-weight: 600;
 }
 
@@ -380,7 +397,8 @@ body {
 .heroSectionStagesCircularInside1 {
   height: 12px;
   width: 12px;
-  background-color: rgb(156, 109, 255);
+  /* background-color: rgb(156, 109, 255); */
+  background-color: yellow;
   border-radius: 50%;
 
   /* margin-top: auto; */
@@ -424,14 +442,14 @@ body {
   padding-bottom: 2%;
   text-align: center;
   font-family: "Chakra Petch", sans-serif;
-  color: #4e6bff;
+  color: aqua;
 }
 
 .experienceDark {
   /* color: rgb(255, 255, 255); */
   padding: 5%;
   background-color: #000000;
-  color: #4e6bff;
+  color: black;
 }
 ::selection {
   color: #fff;
@@ -449,7 +467,7 @@ body {
   position: absolute;
   height: 90%;
   width: 4px;
-  background: #ffffff;
+  background: aqua;
   left: 50%;
   top: 20px;
   transform: translateX(-50%);
@@ -496,7 +514,7 @@ body {
   line-height: 40px;
   border-radius: 50%;
   /* color: #ff7979; */
-  color: #005f9a;
+  color: rgb(8, 0, 255);
   /* color: #000000; */
   font-size: 17px;
   box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
@@ -652,6 +670,10 @@ body {
   user-select: none;
   z-index: 1011;
   /* transform: translate3d(-6.6667px, 5.6667px, 0px); */
+  /* background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%); */
+  /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(97, 52, 190) 0%, rgba(4,0,4,1) 90% ); */
+ 
   border-radius: 20px;
   border: solid 2px aqua;
   padding: 4rem 1rem 1rem;
@@ -662,6 +684,7 @@ body {
   top: 40px;
   left: 50px;
   width: 30rem;
+  /* color:black; */
 }
 
 #dragDiv2 {
@@ -940,10 +963,13 @@ body {
 
 .marquee {
   height: 20vh;
+
 }
 
 .marquee img {
   height: 20vh;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 /* <-------------------------------------------Footer Section------------------------------------->  */
