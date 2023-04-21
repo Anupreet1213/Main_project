@@ -4,18 +4,20 @@ import Roadmap from "./Roadmap/Roadmap";
 import Utility from "./Utility/Utility";
 import Service from "./Service/Service";
 import Draggable from "./Drag/Draggable";
-import Feature from "./Feature/Feature"
+import Feature from "./Feature/Feature";
+import Buy from "./Buy/Buy";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <Hero />
+      <Feature />
+      <Buy />
+      {/* <Draggable /> */}
       <Roadmap />
       <Utility />
       <Service />
-      <Feature />
-      <Draggable /> 
     </div>
     // Anupreet :❤dya
   );
