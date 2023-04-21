@@ -1,6 +1,40 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 
 const Hero = () => {
+
+  const progressPercentage = 80;
+  const [countdown, setCountdown] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    const targetDate = new Date("2023-05-01T00:00:00"); // specify your target date here
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      setCountdown({ days, hours, minutes, seconds });
+
+      if (difference < 0) {
+        clearInterval(interval);
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="heroSection">
       <div className="heroSectionSubDiv">
@@ -26,56 +60,53 @@ const Hero = () => {
             <div>Watch a teaser</div>
           </div>
         </div>
+
+
+
         <div className="heroSectionRight">
           <div className="heroSectionRightTop">
-            <p>Presale Stage 1</p>
-            <p>Price : $0.02</p>
-          </div>
-          <hr className="horizontalRule" />
-          <div className="heroSectionRightCenter">
-            <p className="heroSectionRightCenterText1">Presale Stage 1</p>
-            <p className="heroSectionRightCenterText2">1 CGPT = $0.02</p>
-            <p className="heroSectionRightCenterText3">
-              Hurry And Buy Before Stage 2 Price Increases To $0.0026
+          <p className="heroSectionCounter">
+              {countdown.days}D : {countdown.hours}H : {countdown.minutes}M :{" "}
+              {countdown.seconds}S
             </p>
-            <div>
-              <div className="heroStagesSectionHorizontalLine1"></div>
-              <div className="heroStagesSection">
-                <div>
-                  <div className="heroSectionStagesCircular ">
-                    {" "}
-                    <div className="heroSectionStagesCircularInside1"> </div>
-                  </div>
-                  <p>Stage 1</p>
-                </div>
-                <div>
-                  <div className="heroSectionStagesCircular"></div>
-                  <p>Stage 2</p>
-                </div>
-                <div>
-                  <div className="heroSectionStagesCircular"></div>
-                  <p>Stage 3</p>
-                </div>
-                <div>
-                  <div className="heroSectionStagesCircular"></div>
-                  <p>Stage 4</p>
-                </div>
-                <div>
-                  <div className="heroSectionStagesCircular"></div>
-                  <p>Stage 5</p>
-                </div>
+            <div className="progressSection">
+              <div className="progressBar" style={{ width: `${progressPercentage}%` }}>
+                {/* <div className="progressLabel">{`${progressPercentage}%`}</div> */}
+                <div className="progressLabel">Until Next Price $0.007</div>
               </div>
             </div>
-
-            <p className="heroSectionRightCenterText4">
-              Sold — $0 / 1,000,000,000
+            <p className="heroSectionRightCenterText3">
+            USDT raised: $2,059,925 / $2,450,000
             </p>
+            <p className="heroSectionRightCenterText1">LISTING PRICE: $0.01</p>
+          </div>
+        
+          <div className="heroSectionRightCenter">
+            <p className="heroSectionRightCenterText2">----1 ECOTERRA = $0.00625----</p>
+        
             <p className="heroSectionRightCenterText5">
               USDT Raised — $0 / $2,000,000
             </p>
+            <TextField
+          id="filled-multiline-flexible"
+          label="Amount in USD you pay
+          "
+          multiline
+          maxRows={4}
+          variant="filled"
+        />
+            <TextField
+          id="filled-multiline-flexible"
+          label="Amount in ECOTERRA you receive"
+          multiline
+          maxRows={4}
+          variant="filled"
+          inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
+         
+        />
             <div className="heroSectionRightPurpleButtons">
               <div>BUY WITH WALLET</div>
-              <div>BUY WITH CARD</div>
+            
             </div>
             <div className="heroSectionRightWhiteButtons">
               <div>HOW TO BUY</div>
