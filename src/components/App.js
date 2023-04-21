@@ -5,6 +5,7 @@ import Utility from "./Utility/Utility";
 import Service from "./Service/Service";
 import Draggable from "./Drag/Draggable";
 import Feature from "./Feature/Feature"
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Service />
       <Feature />
       <Draggable /> 
+      <Footer />
     </div>
     // Anupreet :❤dya
   );
