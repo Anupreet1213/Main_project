@@ -6,7 +6,7 @@ const Utility = () => {
     <div className="utilitySection">
       <div className="utilitySectionIntro">
         <p>Utility of Blockgpt ecosystem.</p>
-        <p>Know about the product <span style={{color:"#6134BE"}}>Blockgpt</span></p>
+        <p>Know about the product <span style={{color:"aqua"}}>Blockgpt</span></p>
       </div>
       <div className="utilitySectionContainer">
         <div className="utilitySectionLeft">

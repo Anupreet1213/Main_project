@@ -12,12 +12,9 @@ body {
 /* --------------------------------------NavBar---------------------------------------- */
 
 .navbar {
-  /* background-color: transparent; */
-  background: url("./images/backgroundUpper.jpg") center top / 112% no-repeat;
   color: white;
   font-family: "Nanum Gothic", sans-serif;
-  height: 15vh;
-  /* background-color: rgb(239, 93, 93); */
+  height: 13vh;
   display: flex;
   justify-content: space-between;
   gap: 10px 20px;
@@ -26,10 +23,8 @@ body {
   padding-right: 2%;
   /* position: fixed; */
   width: 100vw;
-  z-index: 99;
-  /* top: 0; */
-  box-shadow: none;
-  /* background-color: red; */
+  z-index: 2;
+  border-bottom: 1px solid aqua;
 }
 
 .navbar.scrolled {
@@ -128,7 +123,7 @@ body {
 
 .heroSectionSubDiv {
   /* background-color: #6134BE; */
-  background-color: #24016c;
+  background-color: #000000;
   padding: 5%;
   display: flex;
   gap: 5%;
@@ -151,9 +146,79 @@ body {
 }
 .heroSectionLeftDescription2 {
   font-size: 1.2rem;
-  color: white;
-  padding-top: 3%;
+  color: aqua;
+  /* padding-top: 3%; */
+  height: 11%;
+  overflow: hidden;
+  margin-top: 2%;
+  /* border: 1px solid red; */
 }
+
+
+.word-rotator {
+  width: 600px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.word-rotator span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  font-size: 16px;
+  animation: rotateWords 16s linear infinite;
+}
+
+.word-rotator .word-1 {
+  animation-delay: 0s;
+}
+
+.word-rotator .word-2 {
+  animation-delay: 4s;
+}
+
+.word-rotator .word-3 {
+  animation-delay: 8s;
+}
+
+.word-rotator .word-4 {
+  animation-delay: 12s;
+}
+
+@keyframes rotateWords {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  5% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+/* .heroSectionLeftDescription2 span{
+  display: block;
+  height: 100%;
+  animation: spin_words 6s infinite;
+} */
+
+
+
 
 .heroSectionButtons {
   display: flex;
@@ -167,9 +232,14 @@ body {
   border-radius: 10px;
 }
 .heroSectionButtons :last-child {
-  background-color: #6134be;
+  /* background-color: #6134be; */
+  background: linear-gradient(
+    270deg,
+    rgb(51, 212, 250) 0%,
+    rgb(23, 243, 221) 100%
+  );
   border: 1.5px solid white;
-  color: white;
+  color: black;
   padding: 3%;
   border-radius: 10px;
 }
@@ -177,7 +247,12 @@ body {
 .heroSectionRight {
   /* background-color: #5E5DF0; */
   /* From https://css.glass */
-  background: rgba(78, 255, 222, 0.5);
+  /* background: rgba(78, 255, 222, 0.5); */
+  background: linear-gradient(
+    270deg,
+    rgb(51, 212, 250) 0%,
+    rgb(23, 243, 221) 100%
+  );
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
@@ -196,17 +271,23 @@ body {
   padding: 2% 4%;
   padding-bottom: 2%;
   font-size: 1.3rem;
-  color: white;
+  color: black;
 }
 .heroSectionRightCenter {
   /* background: linear-gradient(135deg,#cb5eee,#4be1ec); */
-  /* From https://css.glass */
+  /* From https://css.glass
   background: rgba(78, 255, 222, 0.5);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(78, 255, 222, 0.41);
+  border: 1px solid rgba(78, 255, 222, 0.41); */
+
+  background: linear-gradient(
+    270deg,
+    rgb(51, 212, 250) 0%,
+    rgb(23, 243, 221) 100%
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -299,7 +380,7 @@ body {
 .heroSectionStagesCircularInside1 {
   height: 12px;
   width: 12px;
-  background-color: yellow;
+  background-color: rgb(156, 109, 255);
   border-radius: 50%;
 
   /* margin-top: auto; */
@@ -516,7 +597,8 @@ body {
   font-weight: 600;
 }
 .utilitySectionLeftDivs:hover {
-  background-color: #6134be;
+  background-color: aqua;
+  color:black;
 }
 .utilitySectionRight {
   /* flex: 0.4; */
@@ -548,8 +630,10 @@ body {
   transition: all 0.5s ease-in;
 }
 .serviceSectionSubWrapper:hover {
-  background-color: #21172e;
-  transform: scale(110%);
+  background-color: aqua;
+  transform: scale(102%);
+  color:black;
+  opacity: 0.7;
 }
 .serviceSectionSubHeadings {
   font-size: 2rem;
@@ -569,7 +653,7 @@ body {
   z-index: 1011;
   /* transform: translate3d(-6.6667px, 5.6667px, 0px); */
   border-radius: 20px;
-  border: solid 2px purple;
+  border: solid 2px aqua;
   padding: 4rem 1rem 1rem;
   /* z-index: 1; */
   display: flex;
@@ -587,7 +671,7 @@ body {
   z-index: 1011;
   /* transform: translate3d(-6.6667px, 5.6667px, 0px); */
   border-radius: 20px;
-  border: solid 2px purple;
+  border: solid 2px aqua;
   padding: 4rem 1rem 1rem;
   /* z-index: 1; */
   display: flex;
@@ -605,7 +689,7 @@ body {
   z-index: 1011;
   /* transform: translate3d(-6.6667px, 5.6667px, 0px); */
   border-radius: 20px;
-  border: solid 2px purple;
+  border: solid 2px aqua;
   padding: 4rem 1rem 1rem;
   /* z-index: 1; */
   display: flex;
@@ -647,7 +731,7 @@ body {
   left: 0;
   right: 0;
   height: 2px;
-  background-color: purple;
+  background-color: aqua;
   top: 2rem;
 }
 
@@ -682,7 +766,7 @@ body {
 .draggable div {
   font-size: 24px;
   font-family: "Nanum Gothic", sans-serif;
-  color: purple;
+  color: aqua;
   margin-bottom: 1%;
 }
 
@@ -711,14 +795,15 @@ body {
   padding: 1% 3% 1% 3%;
   text-align: center;
   border-radius: 15px;
-  border: 2px solid purple;
+  border: 2px solid aqua;
   font-size: 15px;
   transition: all 0.3s ease-in;
   margin-left: auto;
 }
 
 .dragChild div:hover {
-  background-color: purple;
+  background-color: aqua;
+  color:black;
   cursor: pointer;
 }
 
@@ -726,14 +811,14 @@ body {
   /* margin-bottom: 300px; */
   font-size: 24px;
   font-family: "Nanum Gothic", sans-serif;
-  color: purple;
+  color: aqua;
 }
 
 .buySpan2 {
   /* margin-bottom: 300px; */
   font-size: 24px;
   font-family: "Nanum Gothic", sans-serif;
-  color: purple;
+  color: aqua;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -880,7 +965,7 @@ ul {
   list-style: none;
 }
 .footer {
-  background-color: #24262b;
+  background-color: #000000;
   padding: 70px 0;
 }
 .footer-col {
@@ -900,7 +985,7 @@ ul {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #e91e63;
+  background-color: aqua;
   height: 2px;
   box-sizing: border-box;
   width: 50px;

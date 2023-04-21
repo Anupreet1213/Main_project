@@ -6,7 +6,6 @@ import Service from "./Service/Service";
 import Draggable from "./Drag/Draggable";
 import Feature from "./Feature/Feature";
 import Buy from "./Buy/Buy";
-import Feature from "./Feature/Feature";
 import Footer from "./Footer/Footer";
 
 function App() {

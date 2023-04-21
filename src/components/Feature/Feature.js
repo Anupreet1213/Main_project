@@ -6,7 +6,7 @@ const Feature = () => {
   return (
     <div className="feature">
       <h2>
-        Featured In <span style={{ color: "#6134be" }}>Publications</span>
+        Featured In <span style={{ color: "aqua" }}>Publications</span>
       </h2>
       <Marquee className="marquee" gradient={false} speed={40}>
         <img src={image} />
