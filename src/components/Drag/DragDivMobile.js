@@ -1,0 +1,61 @@
+import React from "react";
+
+
+const DragDivMobile = () => {
+ 
+  return (
+    <>
+    
+        <div className="dragDiv">
+          <div className="dragChild">
+            <h2>Buy with ETH</h2>
+            <p>
+              If you have enough ETH in your wallet, you can use the purchase
+              BGPT with ETH option in order to swap the ETH in your wallet for
+              BGPT. Type in the amount of BGPT you wish to purchase and then
+              click “Convert ETH”. Your wallet provider will ask you to confirm
+              the transaction and will also show you the cost of gas.
+            </p>
+            <div>BUY WITH ETH</div>
+          </div>
+        </div>
+      
+     
+
+   
+        <div className="dragDiv" id="dragDiv2">
+          <div className="dragChild">
+            <h2>Buy with USDT</h2>
+            <p>
+              Before you start trading, make sure you have at least $30 USDT in
+              your wallet. Enter the amount of BGPT you wish to purchase
+              (minimum 20,000). Click "Convert USDT". You will then be asked to
+              approve the purchase twice. The first approval is for the USDT
+              contract and the second approval is for the transaction amount.
+              Please make sure you go through two approval steps to complete the
+              transaction.
+            </p>
+            <div>BUY WITH USDT</div>
+          </div>
+        </div>
+
+
+    
+        <div className="dragDiv" id="dragDiv3">
+          <div className="dragChild">
+            <h2>Buy BNB</h2>
+            <p>
+              If you don’t have enough BNB in your wallet to make a purchase,
+              you can use our onramping partner, Transak, in order to buy BNB
+              directly using your card or via a bank transfer. Simply choose
+              your purchase method, go through their simple KYC flow and you’ll
+              be able to make a purchase directly in the widget.
+            </p>
+            <div>BUY WITH USDT</div>
+          </div>
+        </div>
+    </>
+  );
+};
+
+export default DragDivMobile;

@@ -922,7 +922,7 @@ body {
 /* ---------------------------------Draggable / Buy------------------------------------- */
 
 .dragDiv {
-  touch-action: none;
+  /* touch-action: none; */
   cursor: grab;
   user-select: none;
   z-index: 1011;
@@ -965,7 +965,7 @@ body {
 }
 
 #dragDiv2 {
-  touch-action: none;
+  /* touch-action: none; */
   cursor: grab;
   user-select: none;
   z-index: 1011;
@@ -983,7 +983,7 @@ body {
 }
 
 #dragDiv3 {
-  touch-action: none;
+  /* touch-action: none; */
   cursor: grab;
   user-select: none;
   z-index: 1011;
