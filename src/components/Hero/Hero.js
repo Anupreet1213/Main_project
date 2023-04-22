@@ -101,20 +101,45 @@ const Hero = () => {
               <div class="content">1 ECOTERRA = $0.00625</div>
               <div class="line"></div>
             </div>
-              <div className="ThreeButtonsWrapper">
-                  <div className={payButton ===0 ? "activeButton" : "buttonsKeDiv"} onClick={()=>setPayButton(0)}>ETH</div>
-                  <div className={payButton ===1 ? "activeButton" : "buttonsKeDiv2"} onClick={()=>setPayButton(1)}>USDT</div>
-                  <div className={payButton ===2 ? "activeButton" : "buttonsKeDiv3"} onClick={()=>setPayButton(2)}>CARD</div>
+            <div className="ThreeButtonsWrapper">
+              <div
+                className={payButton === 0 ? "activeButton" : "buttonsKeDiv"}
+                onClick={() => setPayButton(0)}
+              >
+                ETH
               </div>
+              <div
+                className={payButton === 1 ? "activeButton" : "buttonsKeDiv2"}
+                onClick={() => setPayButton(1)}
+              >
+                USDT
+              </div>
+              <div
+                className={payButton === 2 ? "activeButton" : "buttonsKeDiv3"}
+                onClick={() => setPayButton(2)}
+              >
+                CARD
+              </div>
+            </div>
             <TextField
               className="heroSectionTextFields"
               id="filled-multiline-flexible"
-              label={`Amount in ${payButton===0 ? "ETH" : payButton===1 ? "USD" : "CARD"} you pay`}
+              label={`Amount in ${
+                payButton === 0 ? "ETH" : payButton === 1 ? "USD" : "CARD"
+              } you pay`}
               multiline
               maxRows={4}
               variant="filled"
             />
-            <div style={{height:"10px",width:"10px",backgroundColor:"white"}}> </div>
+            <div
+              style={{
+                height: "10px",
+                width: "10px",
+                backgroundColor: "white",
+              }}
+            >
+              {" "}
+            </div>
             <TextField
               className="heroSectionTextFields heroSectionTextFields2"
               id="filled-multiline-flexible"
@@ -127,9 +152,8 @@ const Hero = () => {
             <div className="heroSectionRightPurpleButtons">
               <div>CONNECT WALLET</div>
             </div>
-        
-              <div style={{padding:"4%"}}>HOW TO BUY?</div>
-           
+
+            <div style={{ padding: "4%" }}>HOW TO BUY?</div>
           </div>
         </div>
       </div>
