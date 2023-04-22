@@ -35,7 +35,7 @@ const Buy = () => {
         </div>
       </div>
       <Draggable />
-      <div style={{ color: "white" }}>Hello</div>
+      {/* <div style={{ color: "white" }}>Hello</div> */}
     </div>
   );
 };

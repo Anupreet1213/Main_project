@@ -956,7 +956,7 @@ body {
 }
 
 .buySteps {
-  margin-bottom: 70%;
+  margin-bottom: 80%;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -1002,53 +1002,107 @@ body {
   flex-direction: row-reverse;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .buySteps {
     margin-bottom: 100%;
   }
   .animated-div1 {
-    position: relative;
-    /* top: 0px !important; */
-    /* background-color: red; */
-    /* left: 50px; */
-    /* width: 80vw; */
+    left: 11.5% !important;
+    transform: translateX(-50%) !important;
+    top: 980px !important;
+  }
+  .animated-div2 {
+    background-color: green;
+    left: 11.5% !important;
+    transform: translateX(-50%) !important;
+    top: 550px !important;
+  }
+  .animated-div3 {
+    left: 11.5% !important;
+    transform: translateX(-50%) !important;
+    top: 1380px !important;
+  }
+  .buySteps {
+    margin-bottom: 340%;
   }
   .dragDiv {
-    /* position: flex; */
-    /* position: ; */
-    /* top: 200px; */
-    /* left: 0;
-    right: 0; */
-    /* left: 50%; */
-    /* top: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* width: calc(30rem - 50px); */
-    /* width: 20rem; */
-    /* margin-bottom: 10%; */
+    width: 22rem;
   }
   #dragDiv2 {
-    /* position: flex; */
-    /* position: block; */
-    /* top: 250px;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    /* left: 0;
-    width: 20rem; */
+    width: 22rem;
   }
   #dragDiv3 {
-    /* position: flex; */
-    /* position: block; */
-    /* top: 220px;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    /* width: 20rem; */
+    width: 22rem;
   }
-  /* .draggableParent {
-    margin-bottom: 20% !important;
-  } */
 }
 
-@media only screen and (min-width: 405px) and (max-width: 768px) {
+@media only screen and (min-width: 421px) and (max-width: 620px) {
+  .animated-div1 {
+    left: 20% !important;
+    transform: translateX(-50%) !important;
+    top: 800px !important;
+  }
+  .animated-div2 {
+    background-color: pink;
+    left: 20% !important;
+    transform: translateX(-50%) !important;
+    top: 450px !important;
+  }
+  .animated-div3 {
+    left: 20% !important;
+    transform: translateX(-50%) !important;
+    top: 1150px !important;
+  }
+  .buySteps {
+    margin-bottom: 220%;
+  }
+}
+
+@media only screen and (min-width: 621px) and (max-width: 699px) {
+  .animated-div1 {
+    left: 25% !important;
+    transform: translateX(-50%) !important;
+    top: 800px !important;
+  }
+  .animated-div2 {
+    background-color: orange;
+    left: 25% !important;
+    transform: translateX(-50%) !important;
+    top: 450px !important;
+  }
+  .animated-div3 {
+    left: 25% !important;
+    transform: translateX(-50%) !important;
+    top: 1150px !important;
+  }
+  .buySteps {
+    margin-bottom: 180%;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 799px) {
+  .animated-div1 {
+    left: 30% !important;
+    transform: translateX(-50%) !important;
+    top: 800px !important;
+  }
+  .animated-div2 {
+    background-color: purple;
+    left: 30% !important;
+    transform: translateX(-50%) !important;
+    top: 450px !important;
+  }
+  .animated-div3 {
+    left: 30% !important;
+    transform: translateX(-50%) !important;
+    top: 1150px !important;
+  }
+  .buySteps {
+    margin-bottom: 150%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 959px) {
   body {
     overflow-x: hidden;
   }
@@ -1062,8 +1116,24 @@ body {
   .draggable h2 {
     font-size: 24px;
   }
+  .buySteps {
+    margin-bottom: 130%;
+  }
   .animated-div1 {
-    top: 0 !important;
+    left: 35% !important;
+    transform: translateX(-50%) !important;
+    top: 750px !important;
+  }
+  .animated-div2 {
+    background-color: yellow;
+    left: 35% !important;
+    transform: translateX(-50%) !important;
+    top: 400px !important;
+  }
+  .animated-div3 {
+    left: 35% !important;
+    transform: translateX(-50%) !important;
+    top: 1100px !important;
   }
   .dragDiv {
     /* position: flex; */
@@ -1096,12 +1166,40 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1050px) {
+  .animated-div1 {
+    left: 0px !important;
+    top: 550px !important;
+  }
+  .animated-div2 {
+    background-color: blue;
+    left: 500px !important;
+    top: 400px !important;
+  }
+  .animated-div3 {
+    left: 500px !important;
+    top: 800px !important;
+  }
+}
+
+@media only screen and (min-width: 1051px) and (max-width: 1200px) {
   /* .dragDiv {
     width: calc(30rem - 50px);
     width: 25rem;
     margin-bottom: 5%;
   } */
+  .animated-div1 {
+    top: 600px !important;
+  }
+  .animated-div2 {
+    background-color: red;
+    left: 550px !important;
+    top: 400px !important;
+  }
+  .animated-div3 {
+    top: 900px !important;
+    left: 550px !important;
+  }
   #dragDiv2 {
     /* position: flex; */
     /* position: block; */
