@@ -457,39 +457,33 @@ body {
 
 /* <-----------------------------------Steps---------------------------------> */
 
-.stepsSection{
+.stepsSection {
   padding: 2%;
 }
 
-.stepsSection h2{
+.stepsSection h2 {
   padding: 2% 0;
-  font-size: 24px;
-    font-family: "Nanum Gothic", sans-serif;
-    color: aqua;
-}
-
-.stepsSection h1{
   font-size: 24px;
   font-family: "Nanum Gothic", sans-serif;
   color: aqua;
 }
-.stepsSectionDiv{
+
+.stepsSection h1 {
+  font-size: 24px;
+  font-family: "Nanum Gothic", sans-serif;
+  color: aqua;
+}
+.stepsSectionDiv {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.stepsSectionDiv p{
+.stepsSectionDiv p {
   font-size: 22px;
-    font-family: "Nanum Gothic", sans-serif;
-    color: aqua;
+  font-family: "Nanum Gothic", sans-serif;
+  color: aqua;
 }
-
-
-
-
-
-
 
 /* <-----------------------------------------Stages Sction-----------------------------------> */
 
