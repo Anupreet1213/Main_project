@@ -11,7 +11,6 @@ const Roadmap = () => {
   }, []);
   return (
     <div className="RoadmapSection">
-  
       <div className="experienceDark">
         <p className="projectsHeading">Roadmap Section</p>
 
@@ -25,40 +24,82 @@ const Roadmap = () => {
             <section>
               <i class="icon fas fa-home"></i>
               <div class="details">
-                <span class="title">Freelancer</span>
-                <span>Since November 2022</span>
+                <span class="title">2023: Q3-Q4</span>
+                {/* <span>Since November 2022</span> */}
               </div>
-
+              <p>BlockGPT DAO</p>
+              <p>
+                DAO funds will begin unlocking to the DAO treasury (controlled
+                by DAO voting)
+              </p>
               <ul>
-                <li>The idea of BlockGPT was born.</li>
-                <li>The idea of BlockGPT was born.</li>
-                <li>The idea of BlockGPT was born.</li>
-                <li>The idea of BlockGPT was born.</li>
-                <li>The idea of BlockGPT was born.</li>
+                <li>• 150m $CGPT tokens over 5 years, starting October 2023</li>
+                <p>DApps Powered by BlockGPT AI</p>
+                <li>• AI NFT Generator DApp based on ChainGPT Tech.</li>
+                <li>BlockGPT Blockchain & Ecosystem Development</li>
+                <li>
+                  [Testnet] Layer-1 Blockchain designed for AI smart contracts
+                  and models.
+                </li>
+                <li>• Explorer for BlockGPT Blockchain.</li>
+                <li>• AI Models &amp; Tools Marketplace.</li>
+                <li>• Web Wallet for BlockGPT Blockchain.</li>
+                <li>• Wallet Extension for BlockGPT Blockchain.</li>
+                <li>
+                  • Wallet App (IOS &amp; Android) for BlockGPT blockchain.
+                </li>
+                <li>• Custom Remix for BlockGPT Blockchain.</li>
+                <li>• Wormhole (bridge).</li>
               </ul>
 
-              <div class="bottom">
+              {/* <div class="bottom">
                 <a href="https://www.freelancer.in/u/amanpathak26">
                   Freelance Profile
                 </a>
-                {/* <i>- Someone famous</i> */}
-              </div>
+                
+              </div> */}
             </section>
           </div>
           <div data-aos="fade-down" class="row row-2">
             <section>
               <i class="icon fas fa-star"></i>
               <div class="details">
-                <span class="title">Project Contributer at VigyaAi</span>
-                <span>Dec 2022-Feb 2023</span>
+                <span class="title">2023: Q1-Q2</span>
               </div>
               <p>
                 <ul>
-                  <li>• The idea of BlockGPT was born.</li>
-                  <li>• The idea of BlockGPT was born.</li>
-                  <li>• The idea of BlockGPT was born.</li>
-                  <li>• The idea of BlockGPT was born.</li>
-                  <li>• The idea of BlockGPT was born.</li>
+                  <li>• AI Chatbot Prototype Version Release.</li>
+                  <li>
+                    • Staking &amp; Farming DApp designed for $BGPT and supported
+                    tokens.
+                  </li>
+                  <li>
+                   •  BlockGPT AI Chatbot Official v1.0 Release [much more
+                    advanced than beta, AI is online, can read live blockchain
+                    data, live chart data, better at programming, new UI/UX].
+                  </li>
+                  <li>• API &amp; SDK access for businesses &amp; developers.</li>
+                  <li>
+                    • BlockGPT App for IOS &amp; Android release, with built-in
+                    $BGPT supporting wallet.
+                  </li>
+                  <li>
+                    • Release python-based BlockGPT bot for Telegram, Discord, and
+                    Slack.
+                  </li>
+                  <li>• DAO voting system for $BGPT holders.</li>
+                  <li>ChainGPT AI-Based Utilities Development</li>
+                  <li>
+                    • DevAssist Release: a browser extension powered by BlockGPT
+                    AI technology providing users with information about smart
+                    contracts they interact with them.
+                  </li>
+                  <li>• AI smart-contracts auditor (add-on to BlockGPT)</li>
+                  <li>• Ask Crypto People (add-on to BlockGPT)</li>
+                  <li>
+                    • Prompt marketplace: share your best prompts &amp; earn $BGPT
+                    rewards.
+                  </li>
                 </ul>{" "}
               </p>
               <div class="bottom">
@@ -70,48 +111,8 @@ const Roadmap = () => {
           <div id="stars-group-1"></div>
           <div id="stars-group-2"></div>
           <div id="stars-group-3"></div>
-          <div data-aos="fade-down" class="row row-1">
-            <section>
-              <i class="icon fas fa-rocket"></i>
-              <div class="details">
-                <span class="title">Top 1.5% in International Hackathon</span>
-                <span>Jan 2023</span>
-              </div>
-              <p>
-                Got a stunning position in the International Hackathon organised
-                by Lablab.ai team. We built Machine Learning Based Project that
-                uses Cohere API. The final product made us land in top 30 of the
-                hackathon.
-              </p>
-              <div class="bottom">
-                <a href="https://lablab.ai/u/@AmanAp/cld34glda001ade0seyrvzix2">
-                  {" "}
-                  Certification
-                </a>
-                {/* <i>- Someone famous</i> */}
-              </div>
-            </section>
-          </div>
-          <div data-aos="fade-down" class="row row-2">
-            <section>
-              <i class="icon fas fa-globe"></i>
-              <div class="details">
-                <span class="title">1st Prize in WebSpin Contest</span>
-                <span>April 2022</span>
-              </div>
-              <p>
-                I got the first prize in an event that focused on Web
-                Development. The Event was on intercollege level with more than
-                100 participants.
-              </p>
-              <div class="bottom">
-                <a href="https://drive.google.com/file/d/1_nlIGzzrlNOR1WNNfCe9-I4S2wQMEPn_/view?usp=share_link">
-                  Certification
-                </a>
-                {/* <i>- Someone famous</i> */}
-              </div>
-            </section>
-          </div>
+         
+         
           <div data-aos="fade-down" class="row row-1">
             <section>
               <i class="icon fas fa-globe"></i>
@@ -126,8 +127,13 @@ const Roadmap = () => {
                   <li>• Design & planning of our leading AI model.</li>
                   <li>• BlockGPT Advanced AI Model Development.</li>
                   <li>• BlockGPT AI Model Research, Testing, Improvement.</li>
-                  <li>• Pitching to big-tech companies, and founders, attracting    support and early investors.</li>
-                  <li>• Development of a Chatbot based on BlockGPT’s AI model.</li>
+                  <li>
+                    • Pitching to big-tech companies, and founders, attracting
+                    support and early investors.
+                  </li>
+                  <li>
+                    • Development of a Chatbot based on BlockGPT’s AI model.
+                  </li>
                 </ul>
               </p>
               <div class="bottom">
