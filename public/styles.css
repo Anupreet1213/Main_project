@@ -463,7 +463,9 @@ body {
   /* justify-content: center; */
   align-items: center;
   font-family: "Nanum Gothic", sans-serif;
-  padding: 3%;
+  /* font-family: "Chakra Petch", sans-serif; */
+  /* padding: 3%; */
+  margin-bottom: 10%;
 }
 
 .stageSectionHeading {
@@ -472,39 +474,67 @@ body {
   background: linear-gradient(0deg, #69f, #f36);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 5%;
 }
 .stagesWrapper {
   color: white;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  gap: 10px;
 }
 .stagesWrapper :nth-child(odd) {
-  padding: 2%;
+  /* padding: 2%; */
 }
 .stagesWrapper :nth-child(even) {
-  padding: 2%;
+  /* padding: 2%; */
 }
+
+.stagesWrapper hr {
+  height: 100px; /* Adjust height as needed */
+  transform: rotate(180deg);
+  /* transform-origin: left top; */
+}
+
+/* .stageOne {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+} */
 
 .stageOneButton {
   padding: 2% 4%;
-  background-color: red;
+  margin-bottom: 4%;
+  background-color: aqua;
+  color: black;
 }
 .stageTwoButton {
   padding: 2% 4%;
-  background-color: red;
+  color: black;
+  margin-bottom: 4%;
+  background-color: aqua;
 }
 .stageThreeButton {
   padding: 2% 4%;
-  background-color: red;
+  margin-bottom: 4%;
+  color: black;
+  background-color: aqua;
 }
 .stageFourButton {
+  margin-bottom: 4%;
   padding: 2% 4%;
-  background-color: red;
+  color: black;
+  background-color: aqua;
 }
 .stageFiveButton {
+  color: black;
+  margin-bottom: 4%;
   padding: 2% 4%;
-  background-color: red;
+  background-color: aqua;
 }
 
 /* <----------------------------------------Roadmap----------------------------------------> */
@@ -756,9 +786,9 @@ body {
   /* z-index: 1; */
   display: flex;
   flex-direction: column;
-  position: relative;
+  /* position: relative;
   top: 40px;
-  left: 50px;
+  left: 50px; */
   width: 30rem;
   /* color:black; */
   animation-name: floating;
@@ -766,6 +796,9 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.3);
+  position: relative;
+  left: 30px;
+  /* margin-bottom: 30%; */
 }
 
 @keyframes floating {
@@ -792,9 +825,9 @@ body {
   /* z-index: 1; */
   display: flex;
   flex-direction: column;
-  position: relative;
+  /* position: relative;
   top: -400px;
-  left: 700px;
+  left: 700px; */
   width: 30rem;
 }
 
@@ -810,9 +843,9 @@ body {
   /* z-index: 1; */
   display: flex;
   flex-direction: column;
-  position: relative;
+  /* position: relative;
   top: -300px;
-  left: 650px;
+  left: 650px; */
   width: 30rem;
 }
 
@@ -893,7 +926,7 @@ body {
 }
 
 .buySteps {
-  margin-bottom: 20%;
+  margin-bottom: 70%;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -940,34 +973,45 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
+  .buySteps {
+    margin-bottom: 100%;
+  }
+  .animated-div1 {
+    position: relative;
+    /* top: 0px !important; */
+    /* background-color: red; */
+    /* left: 50px; */
+    /* width: 80vw; */
+  }
   .dragDiv {
     /* position: flex; */
     /* position: ; */
-    top: 200px;
+    /* top: 200px; */
     /* left: 0;
     right: 0; */
-    left: 50%;
+    /* left: 50%; */
     /* top: 50%; */
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     /* width: calc(30rem - 50px); */
-    width: 20rem;
+    /* width: 20rem; */
     /* margin-bottom: 10%; */
   }
   #dragDiv2 {
     /* position: flex; */
     /* position: block; */
-    top: 250px;
+    /* top: 250px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20rem;
+    transform: translate(-50%, -50%); */
+    /* left: 0;
+    width: 20rem; */
   }
   #dragDiv3 {
     /* position: flex; */
     /* position: block; */
-    top: 220px;
+    /* top: 220px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20rem;
+    transform: translate(-50%, -50%); */
+    /* width: 20rem; */
   }
   /* .draggableParent {
     margin-bottom: 20% !important;
@@ -988,34 +1032,37 @@ body {
   .draggable h2 {
     font-size: 24px;
   }
+  .animated-div1 {
+    top: 0 !important;
+  }
   .dragDiv {
     /* position: flex; */
     /* position: ; */
-    top: 0;
+    /* top: 0; */
     /* left: 0;
     right: 0; */
-    left: 50%;
+    /* left: 50%; */
     /* top: 50%; */
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%);
     width: 25rem;
-    margin-bottom: 5%;
+    margin-bottom: 5%; */
   }
   #dragDiv2 {
     /* position: flex; */
     /* position: block; */
-    top: 0;
+    /* top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 25rem;
-    margin-bottom: 5%;
+    margin-bottom: 5%; */
   }
   #dragDiv3 {
     /* position: flex; */
     /* position: block; */
-    top: 0;
+    /* top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 25rem;
+    width: 25rem; */
   }
 }
 
@@ -1032,7 +1079,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); */
     /* width: 25rem; */
-    left: 570px;
+    /* left: 570px; */
   }
 }
 

@@ -26,7 +26,12 @@ const DragDiv = () => {
         style={{
           x: divPos1.x,
           y: divPos1.y,
+          width: "30vw",
+          position: "absolute",
+          left: "30px",
+          top: "700px",
         }}
+        className="animated-div1"
         {...bindDivPos1()}
       >
         <div className="dragDiv">
@@ -49,6 +54,10 @@ const DragDiv = () => {
         style={{
           x: divPos2.x,
           y: divPos2.y,
+          position: "absolute",
+          top: "500px",
+          left: "700px",
+          width: "30vw",
         }}
         {...bindDivPos2()}
       >
@@ -73,6 +82,11 @@ const DragDiv = () => {
         style={{
           x: divPos3.x,
           y: divPos3.y,
+          // opacity: "0",
+          width: "30vw",
+          position: "absolute",
+          bottom: "0px",
+          left: "650px",
         }}
         {...bindDivPos3()}
       >
