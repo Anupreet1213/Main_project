@@ -9,6 +9,7 @@ import Buy from "./Buy/Buy";
 import Footer from "./Footer/Footer";
 import Product from "./Product/Product";
 import StagesSection from "./StagesSection/StagesSection";
+import Steps from "./Steps/Steps";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Feature />
       {/* <Draggable />  */}
       <Buy />
+      <Steps /> 
       <StagesSection /> 
       <Product />
     
