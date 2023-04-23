@@ -6,6 +6,10 @@ import ModalSection from "./Modal";
 const Hero = () => {
   const progressPercentage = 80;
 
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => setOpen(true);
+
   const [payButton, setPayButton] = useState(0);
   const [countdown, setCountdown] = useState({
     days: 0,
@@ -150,13 +154,18 @@ const Hero = () => {
               variant="filled"
               inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
             />
-           
-           <ModalSection />
+
+            <ModalSection
+              handleOpen={handleOpen}
+              open={open}
+              setOpen={setOpen}
+            />
+            <div onClick={handleOpen} className="heroSectionRightPurpleButtons">
+              <div>CONNECT WALLET</div>
+            </div>
             <div style={{ padding: "4%" }}>HOW TO BUY?</div>
           </div>
-
         </div>
-        
       </div>
     </div>
   );
