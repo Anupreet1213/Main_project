@@ -21,20 +21,20 @@ const DragDiv = () => {
   });
 
   return (
-    <>
+    <div className="dragDivParent">
       <animated.div
         style={{
           x: divPos1.x,
           y: divPos1.y,
-          width: "30vw",
-          position: "absolute",
-          left: "30px",
-          top: "700px",
+          width: "100%",
+          // position: "absolute",
+          // left: "30px",
+          // top: "700px",
         }}
         className="animated-div1"
         {...bindDivPos1()}
       >
-        <div className="dragDiv">
+        <div className="dragDiv item1">
           <div className="dragChild">
             <h2>Buy with ETH</h2>
             <p>
@@ -54,15 +54,15 @@ const DragDiv = () => {
         style={{
           x: divPos2.x,
           y: divPos2.y,
-          position: "absolute",
-          top: "500px",
-          left: "700px",
-          width: "30vw",
+          // position: "absolute",
+          // top: "500px",
+          // left: "700px",
+          // width: "30vw",
         }}
         className="animated-div2"
         {...bindDivPos2()}
       >
-        <div className="dragDiv" id="dragDiv2">
+        <div className="dragDiv item2" id="dragDiv2">
           <div className="dragChild">
             <h2>Buy with USDT</h2>
             <p>
@@ -84,10 +84,10 @@ const DragDiv = () => {
           x: divPos3.x,
           y: divPos3.y,
           // opacity: "0",
-          width: "30vw",
-          position: "absolute",
-          top: "1000px",
-          left: "650px",
+          // width: "30vw",
+          // position: "absolute",
+          // top: "1000px",
+          // left: "650px",
         }}
         className="animated-div3"
         {...bindDivPos3()}
@@ -106,7 +106,7 @@ const DragDiv = () => {
           </div>
         </div>
       </animated.div>
-    </>
+    </div>
   );
 };
 
