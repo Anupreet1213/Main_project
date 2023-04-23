@@ -26,7 +26,7 @@ const DragDiv = () => {
         style={{
           x: divPos1.x,
           y: divPos1.y,
-          width: "100%",
+          // width: "100%",
           // position: "absolute",
           // left: "30px",
           // top: "700px",
