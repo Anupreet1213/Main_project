@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import ModalSection from "./Modal";
 
 const Hero = () => {
   const progressPercentage = 80;
@@ -149,13 +150,13 @@ const Hero = () => {
               variant="filled"
               inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
             />
-            <div className="heroSectionRightPurpleButtons">
-              <div>CONNECT WALLET</div>
-            </div>
-
+           
+           <ModalSection />
             <div style={{ padding: "4%" }}>HOW TO BUY?</div>
           </div>
+
         </div>
+        
       </div>
     </div>
   );
