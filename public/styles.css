@@ -372,6 +372,7 @@ body {
   padding-top: 5%;
   flex-direction: column;
   width: 90%;
+  cursor: pointer;
 }
 .heroSectionRightPurpleButtons div {
   background-color: #2563eb;
