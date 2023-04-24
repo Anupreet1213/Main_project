@@ -48,8 +48,11 @@ body {
 }
 
 .navChild1 {
-  width: 35vw;
+  /* width: 5vw; */
   cursor: pointer;
+}
+.navChild1 img {
+  width: 10vw;
 }
 .navChild2 {
   width: 40vw;

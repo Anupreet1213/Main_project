@@ -3,7 +3,7 @@ import Draggable from "../Drag/Draggable";
 
 const Buy = () => {
   return (
-    <div style={{ position: "relative" }} className="draggableParent">
+    <div id="buy" style={{ position: "relative" }} className="draggableParent">
       <div className="draggable">
         <div>HOW TO BUY</div>
         <h2>HOW DO YOU BUY CGPT TOKEN IN THE PRESALE?</h2>

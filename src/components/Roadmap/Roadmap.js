@@ -10,7 +10,7 @@ const Roadmap = () => {
     });
   }, []);
   return (
-    <div className="RoadmapSection">
+    <div id="roadmap" className="RoadmapSection">
       <div className="experienceDark">
         <p className="projectsHeading">Roadmap Section</p>
 
@@ -70,22 +70,24 @@ const Roadmap = () => {
                 <ul>
                   <li>• AI Chatbot Prototype Version Release.</li>
                   <li>
-                    • Staking &amp; Farming DApp designed for $BGPT and supported
-                    tokens.
+                    • Staking &amp; Farming DApp designed for $BGPT and
+                    supported tokens.
                   </li>
                   <li>
-                   •  BlockGPT AI Chatbot Official v1.0 Release [much more
+                    • BlockGPT AI Chatbot Official v1.0 Release [much more
                     advanced than beta, AI is online, can read live blockchain
                     data, live chart data, better at programming, new UI/UX].
                   </li>
-                  <li>• API &amp; SDK access for businesses &amp; developers.</li>
+                  <li>
+                    • API &amp; SDK access for businesses &amp; developers.
+                  </li>
                   <li>
                     • BlockGPT App for IOS &amp; Android release, with built-in
                     $BGPT supporting wallet.
                   </li>
                   <li>
-                    • Release python-based BlockGPT bot for Telegram, Discord, and
-                    Slack.
+                    • Release python-based BlockGPT bot for Telegram, Discord,
+                    and Slack.
                   </li>
                   <li>• DAO voting system for $BGPT holders.</li>
                   <li>ChainGPT AI-Based Utilities Development</li>
@@ -97,8 +99,8 @@ const Roadmap = () => {
                   <li>• AI smart-contracts auditor (add-on to BlockGPT)</li>
                   <li>• Ask Crypto People (add-on to BlockGPT)</li>
                   <li>
-                    • Prompt marketplace: share your best prompts &amp; earn $BGPT
-                    rewards.
+                    • Prompt marketplace: share your best prompts &amp; earn
+                    $BGPT rewards.
                   </li>
                 </ul>{" "}
               </p>
@@ -111,8 +113,7 @@ const Roadmap = () => {
           <div id="stars-group-1"></div>
           <div id="stars-group-2"></div>
           <div id="stars-group-3"></div>
-         
-         
+
           <div data-aos="fade-down" class="row row-1">
             <section>
               <i class="icon fas fa-globe"></i>

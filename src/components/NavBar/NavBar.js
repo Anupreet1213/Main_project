@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HamburgerMenu } from "./HamBurgerMenu";
+import { Link } from "react-scroll";
+import logo from "./mainLogo.png";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -23,16 +25,31 @@ const NavBar = () => {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navChild1">
-        {/* <img src={logo} /> */}
-        Hello
+        <img src={logo} />
+        {/* Hello */}
       </div>
       <div className="navChild2">
-        <span className="nav2Item">Home</span>
-        <span className="nav2Item">About</span>
-        <span className="nav2Item">Speakers</span>
-        <span className="nav2Item">Schedule</span>
-        <div className="navChild3">Book Your Seat</div>
-        <HamburgerMenu />
+        <Link to="hero" smooth={true}>
+          {" "}
+          <span className="nav2Item">Home</span>{" "}
+        </Link>
+        <Link to="buy" smooth={true}>
+          {" "}
+          <span className="nav2Item">How to Buy</span>{" "}
+        </Link>
+        <Link to="product" smooth={true}>
+          {" "}
+          <span className="nav2Item">Product</span>{" "}
+        </Link>
+        <Link to="roadmap" smooth={true}>
+          {" "}
+          <span className="nav2Item">Roadmap</span>{" "}
+        </Link>{" "}
+        <Link to="contact" smooth={true}>
+          {" "}
+          <span className="nav2Item">Contact Us</span>{" "}
+        </Link>{" "}
+        <div className="navChild3">Book Your Seat</div> <HamburgerMenu />
       </div>
     </nav>
   );

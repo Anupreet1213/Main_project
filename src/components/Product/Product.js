@@ -6,7 +6,7 @@ const Product = () => {
   const [changeBox, setChangeBox] = useState(false);
 
   return (
-    <div className="productParent">
+    <div id="product" className="productParent">
       <h1>Product Details</h1>
       <div className="product">
         <div className="productBox">

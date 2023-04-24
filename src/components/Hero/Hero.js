@@ -42,7 +42,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="heroSection">
+    <div id="hero" className="heroSection">
       <div className="heroSectionSubDiv">
         <div className="heroSectionLeft">
           <p className="heroSectionLeftHeading">
